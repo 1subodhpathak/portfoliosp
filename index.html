@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Subodh Pathak</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://kit.fontawesome.com/d5b4fca9f7.js" crossorigin="anonymous"></script>
+  </head>
+  <body></body>
+    <header id="header">
+      <div class="pathak">
+        <nav>
+          <div class="left">
+            <span class="white">PORT</span>
+            <span class="green">folio</span>
+          </div>
+          <div class="right">
+            <ul id="sidemenu">
+              <li><a href="/">Home</a></li>
+              <li><a href="/#about">About</a></li>
+              <li><a href="/#services">Services</a></li>
+              <li><a href="/#projects">Projects</a></li>
+              <li><a href="/#contact">Contact</a></li>
+              <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- firstSection -->
+      <section class="firstSection">
+        <div class="leftSection">
+          Hey, My name is <span class="green1">
+            Subodh
+          </span>
+          <div>
+            and I am a
+          </div>
+          <span id="element"></span>
+        </div>
+        <div class="rightSection">
+          <img src="bg.png" alt="">
+        </div>
+      </section>
+
+
+      <!-- secondsection -->
+      <section id="about">
+        <div class="container">
+          <div class="row">
+            <div class="about-col-1">
+              <img src="Subodh_Pathak.png" alt="">
+            </div>
+            <div class="about-col-2">
+              <h1 class="sub-title">About Me</h1>
+              <p>
+                Hello, I'm Subodh Pathak, a passionate and dedicated Full Stack Developer with
+                expertise in both frontend and backend development. My journey as a developer started
+                with a strong foundation in HTML, CSS, and JavaScript, which enabled me to create 
+                visually appealing and interactive user interfaces. As I progressed, I delved into
+                server-side programming and gained proficiency in popular frameworks such as ReactJS,
+                Angular and Vue JS. I'm also skilled in working with databases and have hands-on experience
+                with NodeJs, Django and MongoDb. Simultaneously, I understand the importance of efficient 
+                backend architecture and optimal performance.
+              </p>
+
+              <div class="tab-titles">
+                <div class="tab-links active-link" onclick="opentab('skills')">Skills</div>
+                <div class="tab-links" onclick="opentab('experience')">Experience</div>
+                <div class="tab-links" onclick="opentab('education')">Education</div>
+              </div>
+              <div class="tab-contents active-tab" id="skills">
+                <ul>
+                  <li><span>Web Development</span> <br> Front end and Backend</li>
+                  <li><span>Web Design</span><br>Wordpress and Figma</li>
+                  <li><span>Front End Development</span> <br> Html, CSS and JavaScript</li>
+                  <li><span>Backend Deveopment</span> <br> MongoDb, Django, PHP, SQL</li>
+                  <li><span>Programming Languages</span><br>Python, Java, JavaScript, C++</li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="experience">
+                <ul>
+                  <li><span>2022 - Current</span><br>Computer Science SME at CHEGG</li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="education">
+                <ul>
+                  <li><span>2025</span><br>B.Tech Computer Science and Engineering from <br> Central University of Haryana</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- thirdsection -->
+      <hr>
+      <section class="thirdsection" id="services">
+        <span class="text-gray">The all you need</span>
+        <h1>Services</h1>
+        <div class="box">
+          <div class="vertical">
+            <img class="image-top" src="development.png" alt="">
+            <div class="vertical-title">
+              Website Development
+            </div>
+            <div class="vertical-desc">
+              Designing and Developing any website by web programming, content creation, 
+              and server-side scripting. It involves Planning, Gathering requirements, Design,
+              Content creation, Testing, Deployment and Maintainance
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="design.jpg" alt="">
+            <div class="vertical-title">
+              Responsive Web Design
+            </div>
+            <div class="vertical-desc">
+              Designing and building websites that can adapt and provide an optimal viewing experience
+              across a wide range of devices and screen sizes.With the proliferation of smartphones, 
+              tablets, and various other devices and ensure that websites are accessible and usable 
+              on different platforms.
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="program.png" alt="">
+            <div class="vertical-title">
+             Website Maintainance and Updates
+            </div>
+            <div class="vertical-desc">
+              Website maintenance and updates are essential to ensure that your website remains functional,
+              secure, and up to date with the latest content and features.
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="CMS.jpg" alt="">
+            <div class="vertical-title">
+              Content Management System (CMS)
+            </div>
+            <div class="vertical-desc">
+              Software application or platform that allows users to create, manage, and modify digital content
+              on a website without requiring extensive technical knowledge.
+              Full responsive Wordpress website.
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="backend.png" alt="">
+            <div class="vertical-title">
+              Backend Development
+            </div>
+            <div class="vertical-desc">
+              The main focus is on handling data, processing requests, and managing the functionality that 
+              users interact with on the front end. Several backend. I use several open-source, server-side
+              like NodeJs, Django alongwith Database server like MongoDb. 
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="shop.png" alt="">
+            <div class="vertical-title">
+              E-commerce Solutions
+            </div>
+            <div class="vertical-desc">
+              Designe websites to facilitate the creation and management of online stores and electronic 
+              commerce websites. Here are some popular e-commerce solutions that I have worked on: Shopify, 
+              WooCommerce, BigCommerce and OpenCart.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ------fourth section-------- -->
+      <section id="projects">
+        <div class="container">
+          <h1>Projects</h1>
+          <div class="services-list">
+            <div>
+              <img src="img1.png">
+              <h2>Vaars Coders</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem 
+              culpa voluptatem aspernatur temporibus!</p>
+              <a href="#">Learn More</a>
+            </div>
+            <div>
+              <img src="img2.png">
+              <h2>Vaars Coders</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem 
+              culpa voluptatem aspernatur temporibus!</p>
+              <a href="#">Learn More</a>
+            </div>
+            <div>
+              <img src="img3.png">
+              <h2>Vaars Coders</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem 
+              culpa voluptatem aspernatur temporibus!</p>
+              <a href="#">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- --------contact-------- -->
+      <section id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="contact-left">
+              <h1 class="sub-title">Contact Me</h1>
+              <p>
+                <i class="fa-solid fa-envelope"></i>
+                contact@subodhpathak.com
+              </p>
+              <p> 
+                <i class="fa-sharp fa-solid fa-phone"></i>
+                +918678067291
+              </p>
+              <div class="social-icons">
+                <a href="https://www.linkedin.com/in/subodh-pathak-799305228">
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/subodhpathak51/">
+                  <i class="fa-brands fa-square-instagram"></i>                
+                </a>
+                <a href="">
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+              </div>
+            </div>
+            <div class="contact-right">
+              <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your name" required>
+                <input type="email" name="Email" placeholder="Your email" required>
+                <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                <button type="submit" class="btn">Submit</button>
+              </form>
+              <span id="msg">
+                
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div class="copyright">
+        <p>Copyright © subodhpathak.com</p>
+      </div>
+    </footer>
+    
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Designer', 'Web Developer'],
+      typeSpeed: 50,
+    });
+
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+
+    function opentab(tabname){
+      for(tablink of tablinks){
+        tablink.classList.remove("active-link")
+      }
+      for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab")
+      }
+      event.currentTarget.classList.add("active-link")
+      document.getElementById(tabname).classList.add("active-tab")
+    }
+  </script>
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+      sidemenu.style.right="0";
+    }
+    function closemenu(){
+      sidemenu.style.right="-200px";
+    }
+  </script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyVLfIgiMwZjc9xBPR9rxZNvk2imoYLpAim4tZC11QcZZbFvdq9Z5qYMDW6xyL3ofdwNA/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+          msg.innerHTML = ""
+        }, 5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+  </body>
+</html>
